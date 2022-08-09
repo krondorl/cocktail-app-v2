@@ -1,0 +1,148 @@
+:root {
+  --clr-background: lightyellow;
+  --clr-button-background: #D1E7F8;
+  --clr-button-text: #1A64A7;
+  --clr-input-background: white;
+  --clr-link: #2586DD;
+  --clr-cell-background: #fefefe;
+  --ff-main: 'Roboto Slab', serif;
+  --fw-bold: bold;
+  --fs-body: 1.25em;
+  --fs-input: 1em;
+  --fs-enter: 1.75em;
+}
+
+body {
+  background-color: var(--clr-background);
+  font-size: var(--fs-body);
+  margin: 0;
+  padding: 16px;
+  font-family: var(--ff-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+}
+
+* {
+  font-family: inherit;
+}
+
+button,
+input {
+  border: 0;
+  background-color: var(--clr-button-background);
+  border: 1px solid var(--clr-button-background);
+  color: var(--clr-button-text);
+  font-size: var(--fs-input);
+  font-weight: var(--fw-bold);
+  letter-spacing: 2px;
+  padding: 4px;
+}
+
+input {
+  background: var(--clr-input-background);
+  border: 1px solid var(--clr-button-text);
+  margin: 0 16px 0 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--clr-link);
+}
+
+.app-intro {
+  text-align: center;
+}
+
+.welcome-title {
+  color: var(--clr-button-text);
+}
+
+.enter {
+  font-size: var(--fs-enter);
+}
+
+.cocktail-result-container {
+  margin-top: 48px;
+}
+
+.cocktail-container {
+  margin: 0;
+  padding: 0;
+}
+
+.cocktail-h1-title {
+  margin-top: 0;
+}
+
+.cocktail-h1-title,
+.cocktail-title {
+  color: var(--clr-button-text);
+}
+
+.cocktail-cover-img {
+  height: 128px;
+  margin-bottom: 30px;
+  width: 128px;
+}
+
+.cocktail-img {
+  max-width: 331px;
+}
+
+.cocktail-table {
+  empty-cells: hide;
+  text-align: left;
+}
+
+.cocktail-table th,
+.cocktail-table td {
+  padding: 8px;
+}
+
+.cocktail-table tbody tr:nth-child(even) {
+  background-color: var(--clr-button-background);
+}
+
+td:empty {
+  display: none;
+}
+
+.footer {
+  border-top: 1px solid var(--clr-button-text);
+  margin-top: 5em;
+}
+
+.random {
+  margin-bottom: 1.5em;
+}
+
+.inputs {
+  display: block;
+  grid-template-columns: 40% 60%;
+  grid-auto-flow: row;
+}
+
+@media (min-width: 576px) {
+  .inputs {
+    display: grid;
+  }
+
+  .random {
+    margin-bottom: 0;
+  }
+}
+
+.search-text {
+  max-width: 70%;
+}
+
+.instructions {
+  line-height: 1.6;
+}
+
+.cocktail-img {
+  border: 6px solid var(--clr-button-background);
+}

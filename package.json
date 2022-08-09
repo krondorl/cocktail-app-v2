@@ -1,0 +1,16 @@
+{
+  "name": "cocktail-app-v2",
+  "version": "1.0.0",
+  "description": "Get information about drinks and cocktails.",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm start --port 3000",
+    "server": "cd server && npm start",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Adam Burucs",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.2.2"
+  }
+}
