@@ -18,8 +18,8 @@ Please see [the exercise description of the project for details.](EXERCISE.md)
 
 ## Running the app
 
-1. `npm install`
-2. `npm start`
+1. Run `npm install` in root folder, then in `/client` and `/server` directories.
+2. Execute `npm start` in root folder.
 
 ## Screenshot
 
